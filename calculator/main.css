@@ -1,0 +1,26 @@
+.table {
+    display:table;
+}
+.header {
+    display:table-header-group;
+    font-weight:bold;
+}
+.row {
+    display:table-row;
+}
+.rowGroup {
+    display:table-row-group;
+}
+.cell {
+    display:table-cell;
+    border: 1px solid #000000;
+}
+.button{
+    width: 100%;
+    height: 100%;
+}
+#app{width: 200px; }
+
+#result{
+    width: 100%;
+}
