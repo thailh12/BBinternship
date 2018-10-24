@@ -8,7 +8,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclide: /node_modules/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
         }
@@ -18,5 +18,17 @@ module.exports = {
         loader: 'css-loader'
       }
     ]
-  }
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist/'),
+    publicPath: '/dist/',
+    filename: 'bundle.js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'public/'),
+    port: 3000,
+    publicPath: 'http://localhost:3000/dist/',
+    hotOnly: true
+  },
+  plugins: [new webpack.HotModuleReplacementPlugin()]
 };
