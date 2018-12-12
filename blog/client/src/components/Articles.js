@@ -13,13 +13,17 @@ export const Articles = props => {
         <div className="card-footer">
           author: <i>{props.author}</i>
         </div>
-        <div style={{ width: '30%' }}>
-          <button
-            className="btn btn-danger"
-            onClick={() => props.delete(props._id)}
-          >
-            Delete
-          </button>
+        <div>
+          {props.owner ? (
+            <div style={{ width: '30%' }}>
+              <button
+                className="btn btn-danger"
+                onClick={() => props.delete(props._id)}
+              >
+                Delete
+              </button>
+            </div>
+          ) : null}
         </div>
       </div>
     </Wrapper>

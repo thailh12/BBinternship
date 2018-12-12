@@ -22,57 +22,19 @@ export default class Home extends React.Component {
         {({ state: { articles }, loadPost, newPost, deletePost }) => {
           return (
             <div>
-              <div className="nav">
-                <ul>
-                  <li>
-                    <a className="active" href="">
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <Link to={`/post`} title="Post">
-                      Post
-                    </Link>
-                  </li>
-                  <li>
-                    {user ? (
-                      <Link to="" title={user}>
-                        {user}
-                      </Link>
-                    ) : (
-                      <Link to={`/login`} title="Login">
-                        login
-                      </Link>
-                    )}
-                  </li>
-                  <li>
-                    {user ? (
-                      <a
-                        onClick={() => User.logOut()}
-                        className="active"
-                        href=""
-                      >
-                        logout
-                      </a>
-                    ) : null}
-                  </li>
-                </ul>
-              </div>
-              <div>
-                {articles ? (
-                  <div>
-                    {articles.map((item, index) => {
-                      return (
-                        <Articles
-                          {...item}
-                          delete={Article.deletePost}
-                          key={index}
-                        />
-                      );
-                    })}
-                  </div>
-                ) : null}
-              </div>
+              {articles ? (
+                <div>
+                  {articles.map((item, index) => {
+                    return (
+                      <Articles
+                        {...item}
+                        delete={Article.deletePost}
+                        key={index}
+                      />
+                    );
+                  })}
+                </div>
+              ) : null}
             </div>
           );
         }}

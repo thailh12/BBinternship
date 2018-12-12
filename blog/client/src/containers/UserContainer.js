@@ -7,7 +7,14 @@ import { Redirect, withRouter } from 'react-router-dom';
 class UserContainer extends Container {
   state = {
     username: '',
-    password: ''
+    password: '',
+    post: []
+  };
+  getMyPost = async () => {
+    const user = localStorage.getItem('user');
+
+    let res = await axios.get(`${API}/articles/${user}`);
+    this.setState({ post: res.data });
   };
   register = async info => {
     let data = Object.assign({
@@ -16,6 +23,7 @@ class UserContainer extends Container {
     });
     const url = `${API}/user/`;
     axios.post(url, data);
+    ki;
     window.location.href = 'http://localhost:3000/#/login';
   };
   login = async () => {
