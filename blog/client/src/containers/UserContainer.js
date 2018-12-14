@@ -6,6 +6,7 @@ class UserContainer extends Container {
   state = {
     username: '',
     password: '',
+    error: '',
     post: []
   };
   deletePost = async id => {
@@ -15,7 +16,7 @@ class UserContainer extends Container {
     // this.getMyPost();
     let res = this.state.post.filter(post => post._id != id);
     this.setState({
-      post: res
+      eror: res
     });
   };
   getMyPost = async () => {
@@ -45,6 +46,8 @@ class UserContainer extends Container {
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', res.data.user);
       window.location.href = '/';
+    } else {
+      await this.setState({ error: res.data });
     }
   };
   logOut = () => {

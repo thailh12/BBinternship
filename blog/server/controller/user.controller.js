@@ -39,7 +39,7 @@ function login(req, res, next) {
         .createHash('sha1')
         .update(`${body.password}${user.salt}`)
         .digest('hex');
-      if (user) {
+      if (user.password===hash) {
         const token = jwt.sign(
           {
             id: user.id,
@@ -52,8 +52,7 @@ function login(req, res, next) {
           user: user.username
         });
       } else {
-        res.json('false');
-      }
+          throw new Error('Invalid password');      }
     })
     .catch(e => res.json(e.message));
 }

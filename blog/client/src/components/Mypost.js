@@ -5,7 +5,7 @@ import { Articles } from './Articles';
 import '../styles/Home.css';
 import User from '../containers/UserContainer';
 
-export default class Mypost extends React.PureComponent {
+export default class Mypost extends React.Component {
   componentDidMount() {
     User.getMyPost();
   }
