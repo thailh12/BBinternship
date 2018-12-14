@@ -38,47 +38,28 @@ router.get('/', (req, res, next) => {
         .catch(next);
 });
 
-// router.param('username', (req, res, next) => {
-//     return Articles.find({where: {req.params.username}}, (err, article) => {
-//         if (err) {
-//             return res.sendStatus(404);
-//         } else if (article) {
-//            res.json(article);
-//         }
-//     })
-// });
 
 router.get('/:username', (req, res, next) => {
-        console.log(req.params);
-         Articles.find({author: req.params.username})
-            .then(article => {res.json(article); console.log(article)})
+        Articles.find({author: req.params.username})
+            .then(article => {
+                res.json(article);
+            })
             .catch(e => res.json(e)
             );
     }
 );
-router.patch('/:id', (req, res, next) => {
-    const {body} = req;
-
-    if (typeof body.title !== 'undefined') {
-        req.article.title = body.title;
-    }
-
-    if (typeof body.author !== 'undefined') {
-        req.article.author = body.author;
-    }
-
-    if (typeof body.body !== 'undefined') {
-        req.article.body = body.body;
-    }
-
-    return req.article
-        .save()
-        .then(() => res.json({article: req.article.toJSON()}))
-        .catch(next);
-});
 
 router.delete('/:id', middleware.verify, (req, res, next) => {
-    return Articles.findOneAndDelete(req.article._id)
+    const token = req.headers.authorization;
+
+    let info = middleware.decode(token);
+
+    return Articles.findOne({_id: req.params.id})
+        .then((doc) => {
+            if (info.username === doc.author) {
+                doc.remove()
+            }
+        })
         .then(() => res.sendStatus(200))
         .catch(next);
 });
