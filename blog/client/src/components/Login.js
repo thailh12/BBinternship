@@ -2,7 +2,7 @@ import React from 'react';
 import User from '../containers/UserContainer';
 import { Link } from 'react-router-dom';
 
-export default class Login extends React.Component {
+export default class Login extends React.PureComponent {
   handleChangeField(key, ev) {
     User.state[key] = ev.target.value;
   }

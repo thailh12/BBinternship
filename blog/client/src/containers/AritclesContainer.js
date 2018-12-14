@@ -18,16 +18,17 @@ class AritcleContainer extends Container {
       title: data.title,
       body: data.body
     });
-    window.location.href = 'http://localhost:3000/';
+    window.location.href = '/';
   };
   deletePost = async id => {
     const token = localStorage.getItem('token');
     axios.defaults.headers.common['Authorization'] = token;
     axios.delete(`${API}/articles/${id}`);
-    this.loadPost();
-    // this.setState({
-    //   articles: state.articles.filter(article => article._id !== id)
-    // });
+    //this.loadPost();
+    let res = state.articles.filter(article => article._id !== id);
+    this.setState({
+      articles: res
+    });
   };
 }
 

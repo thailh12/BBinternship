@@ -2,7 +2,7 @@ import React from 'react';
 import User from '../containers/UserContainer';
 import { Link } from 'react-router-dom';
 
-export default class Register extends React.Component {
+export default class Register extends React.PureComponent {
   state = { username: '', password: '', cfpassword: '' };
   handleChangeField(key, ev) {
     this.state[key] = ev.target.value;

@@ -1,14 +1,22 @@
-import React from 'react';
 import { Container } from 'unstated';
 import axios from 'axios';
 import { API } from '../../config';
-import { Redirect, withRouter } from 'react-router-dom';
 
 class UserContainer extends Container {
   state = {
     username: '',
     password: '',
     post: []
+  };
+  deletePost = async id => {
+    const token = localStorage.getItem('token');
+    axios.defaults.headers.common['Authorization'] = token;
+    axios.delete(`${API}/articles/${id}`);
+    // this.getMyPost();
+    let res = this.state.post.filter(post => post._id != id);
+    this.setState({
+      post: res
+    });
   };
   getMyPost = async () => {
     const user = localStorage.getItem('user');
@@ -23,8 +31,7 @@ class UserContainer extends Container {
     });
     const url = `${API}/user/`;
     axios.post(url, data);
-    ki;
-    window.location.href = 'http://localhost:3000/#/login';
+    window.location.href = '/#/login';
   };
   login = async () => {
     const url = `${API}/user/login`;
@@ -37,7 +44,7 @@ class UserContainer extends Container {
     if (typeof res.data === 'object') {
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', res.data.user);
-      window.location.href = 'http://localhost:3000/';
+      window.location.href = '/';
     }
   };
   logOut = () => {

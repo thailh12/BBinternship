@@ -7,7 +7,7 @@ import { Redirect } from 'react-router-dom';
 const Wrapper = styled.div`
   margin: 10px;
 `;
-export default class Form extends React.Component {
+export default class Form extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
