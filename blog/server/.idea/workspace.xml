@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49a873f1-f215-498b-9638-91c5e94bce43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Mypost.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Mypost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/containers/UserContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/containers/UserContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/dist/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/dist/bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../todo-react/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../todo-react/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/user.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+            <state relative-caret-position="704">
+              <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -58,7 +47,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routers/articles.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="880">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
@@ -105,9 +94,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="220" />
-    <option name="width" value="1388" />
-    <option name="height" value="1003" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -149,7 +138,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.11.4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Learning/react-native-template" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/lib/node_modules/prettier" />
@@ -189,18 +178,20 @@
       <workItem from="1544159227275" duration="277000" />
       <workItem from="1544431355530" duration="6802000" />
       <workItem from="1544616059858" duration="3117000" />
-      <workItem from="1544750872318" duration="11103000" />
+      <workItem from="1544750872318" duration="11641000" />
+      <workItem from="1544854229009" duration="1153000" />
+      <workItem from="1545099819139" duration="926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29994000" />
+    <option name="totallyTimeSpent" value="32611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12242744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25435355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -252,6 +243,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -259,10 +257,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routers/index.js">
+    <entry file="file://$PROJECT_DIR$/routers/articles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="880">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
@@ -275,22 +273,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routers/articles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="22">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/user.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="704">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
         </state>
       </provider>
     </entry>

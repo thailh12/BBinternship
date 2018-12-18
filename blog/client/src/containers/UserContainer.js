@@ -31,8 +31,12 @@ class UserContainer extends Container {
       password: info.password
     });
     const url = `${API}/user/`;
-    axios.post(url, data);
-    window.location.href = '/#/login';
+    let res = await axios.post(url, data);
+    if (typeof res.data === 'string') {
+      await this.setState({ error: res.data });
+    } else {
+      window.location.href = '/#/login';
+    }
   };
   login = async () => {
     const url = `${API}/user/login`;
