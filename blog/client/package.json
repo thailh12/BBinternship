@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.2.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
